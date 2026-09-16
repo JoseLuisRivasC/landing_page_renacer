@@ -1,13 +1,18 @@
 /* =========================================
-   Consulta Médica Renacer — Entry point (ES module)
+   Consulta Médica Renacer — Entry point
+   Script clásico (no ES module) para funcionar tanto abriendo
+   el archivo directamente (file://) como desde un servidor.
+   Depende de que los módulos en /js/modules se hayan cargado antes
+   (ver el orden de <script defer> en index.html).
    ========================================= */
 
-import { initNav } from './modules/nav.js';
-import { initSmoothScroll } from './modules/smooth-scroll.js';
-import { initReveal } from './modules/reveal.js';
-import { initFooterYear } from './modules/footer-year.js';
+(function () {
+  'use strict';
 
-initNav();
-initSmoothScroll();
-initFooterYear();
-initReveal();
+  var app = window.RenacerApp || {};
+
+  if (app.initNav) app.initNav();
+  if (app.initSmoothScroll) app.initSmoothScroll();
+  if (app.initFooterYear) app.initFooterYear();
+  if (app.initReveal) app.initReveal();
+})();
