@@ -1,4 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <rect width="32" height="32" rx="8" fill="#173F6B"/>
-  <text x="16" y="22" font-family="Nunito, sans-serif" font-size="16" font-weight="800" text-anchor="middle" fill="#2E9CA8">R</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><circle cx="32" cy="32" r="32" fill="#173F6B"/><circle cx="32" cy="24" r="6" fill="#FFC857"/><g stroke="#2E9CA8" stroke-width="2.4" stroke-linecap="round"><path d="M32 11v5"/><path d="M20 17l3.5 3.5"/><path d="M44 17l-3.5 3.5"/><path d="M14 27h5"/><path d="M50 27h-5"/></g><path d="M8 40c6-4 12-4 18 0s12 4 18 0 8-3 12-1v18H8z" fill="#2E9CA8"/><path d="M8 47c6-4 12-4 18 0s12 4 18 0 8-3 12-1v12H8z" fill="#FFFFFF" opacity="0.85"/><path d="M8 52c6-4 12-4 18 0s12 4 18 0 8-3 12-1v7H8z" fill="#173F6B"/></svg>

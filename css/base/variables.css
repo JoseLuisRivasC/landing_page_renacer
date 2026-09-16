@@ -20,4 +20,7 @@
 
   --header-height: 72px;
   --container-width: 1120px;
+
+  --section-padding-mobile: 56px;
+  --section-padding-desktop: 80px;
 }
