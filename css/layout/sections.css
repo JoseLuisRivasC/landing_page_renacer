@@ -1,0 +1,233 @@
+/* =========================================
+   Layout: Contenedor y secciones genéricas
+   ========================================= */
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: var(--section-padding-mobile) 0;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: var(--section-padding-desktop) 0;
+  }
+}
+
+.section__title {
+  font-size: clamp(1.6rem, 4vw, 2.1rem);
+  text-align: center;
+}
+
+.section__title::after,
+.section__group-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  margin: 14px auto 0;
+  border-radius: 2px;
+  background-color: var(--color-secondary);
+}
+
+.section__subtitle {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 2.5em;
+  color: var(--color-text);
+}
+
+.section__group-title {
+  font-size: 1.15rem;
+  text-align: center;
+  margin: 2em 0 1em;
+  color: var(--color-secondary);
+}
+
+.section__cta {
+  text-align: center;
+  margin-top: 2.5em;
+}
+
+/* Franja de prueba social */
+.proof-band {
+  background-color: var(--color-bg-soft);
+  padding: 48px 0;
+}
+
+.proof-band__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  align-items: center;
+}
+
+.proof-band__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+.proof-band__text {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .proof-band__inner {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .proof-band__text {
+    text-align: left;
+  }
+}
+
+/* Pasos para agendar */
+.steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 28px;
+  margin-top: 2.5em;
+}
+
+.step {
+  text-align: center;
+  padding: 0 12px;
+}
+
+.step__number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+}
+
+.step__title {
+  font-size: 1.05rem;
+  margin-bottom: 0.4em;
+}
+
+.step__text {
+  font-size: 0.92rem;
+}
+
+/* Ubicación */
+.ubicacion__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.ubicacion__item {
+  font-size: 0.98rem;
+}
+
+.ubicacion__map iframe {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+}
+
+/* Contacto */
+.contact-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow-sm);
+  color: var(--color-text);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.contact-card strong {
+  display: block;
+  color: var(--color-primary);
+}
+
+.contact-card__value {
+  font-size: 0.95rem;
+}
+
+.contact-card__icon {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: var(--color-bg-soft);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card__icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* Animación de aparición al hacer scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ubicacion__grid {
+    grid-template-columns: 1fr 1.2fr;
+  }
+
+  .contact-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

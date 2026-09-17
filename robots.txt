@@ -1,0 +1,5 @@
+# EDITAR: reemplazar por el dominio real una vez definido el hosting
+User-agent: *
+Allow: /
+
+Sitemap: https://EDITAR-dominio-real.cl/sitemap.xml

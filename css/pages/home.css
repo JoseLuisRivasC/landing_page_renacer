@@ -1,0 +1,47 @@
+/* =========================================
+   Página: Home (landing)
+   ========================================= */
+
+/* Secciones con fondo diferenciado */
+.section--domicilio {
+  background-color: var(--color-primary);
+}
+
+.section--domicilio .section__title,
+.section--domicilio .section__subtitle {
+  color: var(--color-white);
+}
+
+.section--domicilio .section__subtitle {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.section--equipo {
+  background-color: var(--color-bg-soft);
+}
+
+.section--cuidados {
+  background-color: var(--color-white);
+}
+
+.section--faq {
+  background-color: var(--color-bg-soft);
+}
+
+.section--ubicacion {
+  background-color: var(--color-bg-soft);
+}
+
+.section__wave {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  line-height: 0;
+}
+
+.section__wave svg {
+  width: 100%;
+  height: 80px;
+  display: block;
+}

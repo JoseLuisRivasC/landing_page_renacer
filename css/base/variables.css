@@ -1,0 +1,26 @@
+/* =========================================
+   Variables globales de diseño
+   ========================================= */
+
+:root {
+  --color-primary: #173F6B;
+  --color-secondary: #2E9CA8;
+  --color-bg-soft: #E8F4F4;
+  --color-white: #FFFFFF;
+  --color-text: #4A4A4A;
+
+  --font-base: 'Nunito', system-ui, -apple-system, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+
+  --shadow-sm: 0 2px 8px rgba(23, 63, 107, 0.08);
+  --shadow-md: 0 8px 24px rgba(23, 63, 107, 0.12);
+
+  --header-height: 72px;
+  --container-width: 1120px;
+
+  --section-padding-mobile: 56px;
+  --section-padding-desktop: 80px;
+}
