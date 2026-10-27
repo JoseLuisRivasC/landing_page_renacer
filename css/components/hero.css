@@ -64,6 +64,8 @@
 .hero__visual {
   position: relative;
   order: -1;
+  width: 100%;
+  min-width: 0;
   max-width: 280px;
   margin: 0 auto;
 }

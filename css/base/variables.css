@@ -18,7 +18,8 @@
   --shadow-sm: 0 2px 8px rgba(23, 63, 107, 0.08);
   --shadow-md: 0 8px 24px rgba(23, 63, 107, 0.12);
 
-  --header-height: 72px;
+  --header-height: 84px;
+  --header-height-mobile: 72px;
   --container-width: 1120px;
 
   --section-padding-mobile: 56px;

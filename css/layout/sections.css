@@ -55,44 +55,6 @@
   margin-top: 2.5em;
 }
 
-/* Franja de prueba social */
-.proof-band {
-  background-color: var(--color-bg-soft);
-  padding: 48px 0;
-}
-
-.proof-band__inner {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 24px;
-  align-items: center;
-}
-
-.proof-band__img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
-}
-
-.proof-band__text {
-  font-size: 1.05rem;
-  font-weight: 600;
-  color: var(--color-primary);
-  text-align: center;
-}
-
-@media (min-width: 768px) {
-  .proof-band__inner {
-    grid-template-columns: 3fr 2fr;
-  }
-
-  .proof-band__text {
-    text-align: left;
-  }
-}
-
 /* Pasos para agendar */
 .steps {
   display: grid;
@@ -127,23 +89,6 @@
 
 .step__text {
   font-size: 0.92rem;
-}
-
-/* Ubicación */
-.ubicacion__grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
-  align-items: center;
-}
-
-.ubicacion__item {
-  font-size: 0.98rem;
-}
-
-.ubicacion__map iframe {
-  border-radius: var(--radius-lg);
-  box-shadow: var(--shadow-md);
 }
 
 /* Contacto */

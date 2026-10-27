@@ -61,7 +61,7 @@
 
 .nav {
   position: fixed;
-  top: var(--header-height);
+  top: var(--header-height-mobile);
   left: 0;
   right: 0;
   background-color: var(--color-white);
@@ -72,7 +72,7 @@
 }
 
 .nav.is-open {
-  max-height: 320px;
+  max-height: 380px;
 }
 
 .nav .nav__list {

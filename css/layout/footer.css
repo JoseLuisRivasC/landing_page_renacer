@@ -37,6 +37,24 @@
   opacity: 0.85;
 }
 
+.footer__links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.footer__links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer__links a:hover {
+  text-decoration: underline;
+}
+
 .footer__copy {
   text-align: center;
   font-size: 0.85rem;
