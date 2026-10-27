@@ -15,4 +15,5 @@
   if (app.initSmoothScroll) app.initSmoothScroll();
   if (app.initFooterYear) app.initFooterYear();
   if (app.initReveal) app.initReveal();
+  if (app.initCarousel) app.initCarousel();
 })();

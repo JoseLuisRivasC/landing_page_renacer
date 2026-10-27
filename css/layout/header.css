@@ -7,10 +7,16 @@
   top: 0;
   left: 0;
   right: 0;
-  height: var(--header-height);
+  height: var(--header-height-mobile);
   background-color: var(--color-white);
   box-shadow: var(--shadow-sm);
   z-index: 900;
+}
+
+@media (min-width: 768px) {
+  .header {
+    height: var(--header-height);
+  }
 }
 
 .header__inner {
@@ -33,7 +39,17 @@
 
 .logo__img {
   display: block;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .logo__img {
+    width: 64px;
+    height: 64px;
+  }
 }
 
 .logo span {

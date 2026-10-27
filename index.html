@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Consulta Médica Renacer | Consulta médica en San Ramón</title>
-<meta name="description" content="Consulta Médica Renacer: atención integral para ti y tu familia en San Ramón. Medicina general, atención a domicilio, exámenes y más. Agenda por WhatsApp.">
+<title>Consulta Médica Renacer | Atención médica a domicilio en Región Metropolitana</title>
+<meta name="description" content="Consulta Médica Renacer: atención médica a domicilio en toda la Región Metropolitana de Santiago. Medicina general, enfermería, kinesiología, exámenes y más. Agenda por WhatsApp.">
 
 <!-- Open Graph -->
-<meta property="og:title" content="Consulta Médica Renacer | Cuidamos de ti, estés donde estés">
-<meta property="og:description" content="Atención integral para ti y tu familia en San Ramón, Región Metropolitana. Consulta presencial y a domicilio.">
+<meta property="og:title" content="Consulta Médica Renacer | Atención médica a domicilio en toda la Región Metropolitana">
+<meta property="og:description" content="Atención integral para ti y tu familia en toda la Región Metropolitana, con consulta a domicilio.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <!-- EDITAR: reemplazar por el dominio real una vez definido el hosting (mismo placeholder que robots.txt/sitemap.xml) -->
@@ -29,8 +29,10 @@
 <link rel="stylesheet" href="css/components/nav.css">
 <link rel="stylesheet" href="css/components/cards.css">
 <link rel="stylesheet" href="css/components/hero.css">
+<link rel="stylesheet" href="css/components/carousel.css">
 <link rel="stylesheet" href="css/components/trust.css">
-<link rel="stylesheet" href="css/components/team.css">
+<link rel="stylesheet" href="css/components/about.css">
+<link rel="stylesheet" href="css/components/convenios.css">
 <link rel="stylesheet" href="css/components/faq.css">
 <link rel="stylesheet" href="css/components/whatsapp-float.css">
 <link rel="stylesheet" href="css/layout/header.css">
@@ -38,91 +40,50 @@
 <link rel="stylesheet" href="css/layout/sections.css">
 <link rel="stylesheet" href="css/pages/home.css">
 
-<!-- JSON-LD: MedicalClinic -->
-<!-- EDITAR: horario de atención general/Dr. Deivis Marroquín pendiente de confirmación (ver openingHoursSpecification sin dayOfWeek asignado para Medicina General) -->
+<!-- JSON-LD: MedicalBusiness -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "MedicalClinic",
+  "@type": "MedicalBusiness",
   "name": "Consulta Médica Renacer",
-  "description": "Centro de atención médica integral respaldado por Mi Bienestar — Consultorios de Chile.",
+  "description": "Atención médica a domicilio en toda la Región Metropolitana de Santiago.",
   "url": "https://EDITAR-dominio-real.cl/",
   "image": "https://EDITAR-dominio-real.cl/assets/img/og/og-renacer.jpg",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Pedro Aguirre Cerda 9299",
-    "addressLocality": "San Ramón",
-    "addressRegion": "Región Metropolitana",
-    "addressCountry": "CL"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": -33.546317520481225,
-    "longitude": -70.63708587428981
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Región Metropolitana de Santiago"
   },
   "telephone": "+56930882291",
-  "contactPoint": [
-    {
-      "@type": "ContactPoint",
-      "telephone": "+56930882291",
-      "contactType": "customer service"
-    },
-    {
-      "@type": "ContactPoint",
-      "telephone": "+56982328997",
-      "contactType": "customer service"
-    }
-  ],
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+56930882291",
+    "contactType": "customer service"
+  },
   "medicalSpecialty": [
     "Medicina General",
-    "Psicología",
-    "Nutrición",
-    "Matronería",
-    "Fonoaudiología",
-    "Podología",
+    "Enfermería",
     "Kinesiología",
-    "Cuidados paliativos"
+    "Psicología",
+    "Control de Enfermedades Crónicas",
+    "Podología",
+    "Terapia Ocupacional",
+    "Fonoaudiología",
+    "Nutrición"
   ],
-  "openingHoursSpecification": [
+  "availableService": [
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "09:00",
-      "closes": "14:00",
-      "description": "Francisca Meneses — Psicóloga infanto-juvenil"
+      "@type": "MedicalProcedure",
+      "name": "Exámenes de Laboratorio a domicilio"
     },
     {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Thursday", "Friday"],
-      "opens": "10:00",
-      "closes": "17:00",
-      "description": "Marta Canales — Nutricionista"
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": "Saturday",
-      "opens": "10:00",
-      "closes": "14:00",
-      "description": "Marta Canales — Nutricionista"
+      "@type": "MedicalProcedure",
+      "name": "Evaluación Kinésica a domicilio"
     }
   ],
-  "employee": [
-    {
-      "@type": "Person",
-      "name": "Dr. Deivis Marroquín",
-      "jobTitle": "Médico Cirujano"
-    },
-    {
-      "@type": "Person",
-      "name": "Francisca Meneses",
-      "jobTitle": "Psicóloga infanto-juvenil"
-    },
-    {
-      "@type": "Person",
-      "name": "Marta Canales",
-      "jobTitle": "Nutricionista"
-    }
-  ]
+  "memberOf": {
+    "@type": "Organization",
+    "name": "Mi Bienestar — Gendarmería de Chile"
+  }
 }
 </script>
 
@@ -134,50 +95,50 @@
   "mainEntity": [
     {
       "@type": "Question",
-      "name": "¿Atienden por Fonasa o Isapre?",
+      "name": "¿Cómo funciona la atención a domicilio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Estamos verificando y actualizando el detalle de convenios vigentes con Fonasa e Isapres. Escríbenos por WhatsApp y te confirmamos tu caso puntual."
+        "text": "Agendas por WhatsApp, coordinamos la hora y un profesional te visita en tu domicilio con lo necesario para tu atención."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuál es el valor de la consulta?",
+      "name": "¿A qué comunas de la Región Metropolitana llegan?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "El valor varía según la especialidad y el tipo de atención (presencial o a domicilio). Contáctanos por WhatsApp y te entregamos el valor exacto antes de agendar."
+        "text": "Atendemos en toda la Región Metropolitana. Cuéntanos tu dirección por WhatsApp y te confirmamos el tiempo estimado de llegada."
       }
     },
     {
       "@type": "Question",
-      "name": "¿En qué comunas realizan atención a domicilio?",
+      "name": "¿Con cuánta anticipación debo agendar?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Cubrimos San Ramón y comunas cercanas. Cuéntanos tu dirección por WhatsApp y te confirmamos si contamos con cobertura en tu zona."
+        "text": "El tiempo de coordinación depende de la disponibilidad y tu urgencia. Escríbenos por WhatsApp y te confirmamos el horario más próximo disponible."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Necesito orden médica para hacerme un examen?",
+      "name": "¿Atienden con Fonasa, Isapre o convenios?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Depende del tipo de examen. Para algunos basta con agendar directamente, y para otros se requiere una orden médica previa. Consúltanos por WhatsApp con el examen que necesitas."
+        "text": "Estamos actualizando el detalle de convenios vigentes con Fonasa, Isapres e instituciones. Escríbenos por WhatsApp y te confirmamos tu caso puntual."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Tienen atención pediátrica?",
+      "name": "¿Qué debo tener preparado en casa para la visita?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Sí, contamos con atención pediátrica y control sano para el seguimiento del desarrollo y crecimiento de niñas y niños."
+        "text": "Dependiendo del tipo de atención, te indicaremos por WhatsApp si necesitas preparar algo especial antes de la visita."
       }
     },
     {
       "@type": "Question",
-      "name": "¿Cuánto demoran los resultados de laboratorio?",
+      "name": "¿Cómo recibo los resultados de mis exámenes de laboratorio?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Los plazos dependen del tipo de examen solicitado. Al momento de tomar la muestra te indicamos el tiempo estimado de entrega de tus resultados."
+        "text": "Al momento de tomar la muestra en tu domicilio te indicamos el canal y el tiempo estimado de entrega de tus resultados."
       }
     }
   ]
@@ -212,8 +173,9 @@
   <symbol id="icon-nutricion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M12 21c-4-2-7-5-7-9a5 5 0 019-3 5 5 0 019 3c0 4-3 7-7 9z"/><path d="M13 4c1-1 3-1 3 1"/>
   </symbol>
-  <symbol id="icon-matrona" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="12" cy="8" r="4"/><path d="M8 12c-2 2-2 5-2 9h12c0-4 0-7-2-9"/>
+  <symbol id="icon-enfermeria" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 3v7"/><path d="M8.5 6.5h7"/><rect x="5" y="10" width="14" height="11" rx="2"/>
+    <path d="M9 17c0-1.5 1-2.5 3-2.5s3 1 3 2.5"/>
   </symbol>
   <symbol id="icon-fonoaudiologia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M9 5a5 5 0 015 5c0 2-1.5 2.5-1.5 4.5a2.5 2.5 0 01-5 0"/>
@@ -223,8 +185,9 @@
   <symbol id="icon-podologia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M8 21c-2-3 0-5 1-7 1-3-1-5 1-8"/><path d="M16 21c2-3 0-5-1-7-1-3 1-5-1-8"/>
   </symbol>
-  <symbol id="icon-control-sano" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="12" cy="7" r="3"/><path d="M7 21c0-4 2-6 5-6s5 2 5 6"/>
+  <symbol id="icon-terapia-ocupacional" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="8" cy="7" r="2.5"/><path d="M8 9.5v5"/><path d="M5 12h6"/><path d="M8 14.5l-2.5 6"/><path d="M8 14.5l2.5 6"/>
+    <circle cx="17" cy="6" r="2"/><path d="M15 17a4 4 0 014-4h0"/>
   </symbol>
   <symbol id="icon-kinesiologia" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <circle cx="9" cy="5" r="2"/>
@@ -237,66 +200,47 @@
   <symbol id="icon-laboratorio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <path d="M9 3h6"/><path d="M10 3v6l-5 9a2 2 0 002 3h10a2 2 0 002-3l-5-9V3"/>
   </symbol>
-  <symbol id="icon-electrocardiograma" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M3 12h4l2 6 4-12 2 6h6"/>
-  </symbol>
-  <symbol id="icon-holter" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="12" cy="13" r="7"/><path d="M12 9v4l3 2"/><path d="M9 3h6"/>
+  <symbol id="icon-evaluacion-kinesica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M4 20c2-5 4-7 4-10a4 4 0 118 0c0 3 2 5 4 10"/><path d="M9 13h6"/>
   </symbol>
 
-  <symbol id="icon-medico-domicilio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 15v-3M10.5 13.5h3"/>
-  </symbol>
-  <symbol id="icon-enfermeria-domicilio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M12 21c-2-2-3-4-3-6a3 3 0 016 0c0 2-1 4-3 6z"/>
-  </symbol>
-  <symbol id="icon-examenes-domicilio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 14h4l1 3H9z"/>
-  </symbol>
-  <symbol id="icon-adulto-mayor-domicilio" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><circle cx="12" cy="14" r="1.6"/><path d="M9 19c0-2 1.5-3 3-3s3 1 3 3"/>
-  </symbol>
-
-  <symbol id="icon-cuidados-paliativos" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M12 21c-4-2-7-5-7-9a5 5 0 019-3 5 5 0 019 3c0 4-3 7-7 9z"/><path d="M9 12l2 2 4-4"/>
-  </symbol>
-  <symbol id="icon-fin-de-vida" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M12 3s-4 4-4 8a4 4 0 008 0c0-4-4-8-4-8z"/><path d="M12 15v6"/>
-  </symbol>
-  <symbol id="icon-certificado" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M7 3h8l4 4v14H7z"/><path d="M15 3v4h4"/><path d="M9 13h6M9 17h6"/>
-  </symbol>
-
-  <symbol id="icon-control-peso" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <rect x="3" y="10" width="18" height="11" rx="2"/>
-    <path d="M12 4a4 4 0 014 4"/>
-    <path d="M12 13.5l2-2.2"/>
-    <circle cx="12" cy="13.5" r="0.6" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="icon-curaciones" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <rect x="4" y="9" width="16" height="6" rx="3" transform="rotate(-25 12 12)"/>
-    <circle cx="9" cy="10.6" r="0.6" fill="currentColor" stroke="none" transform="rotate(-25 12 12)"/>
-    <circle cx="15" cy="13.4" r="0.6" fill="currentColor" stroke="none" transform="rotate(-25 12 12)"/>
-  </symbol>
-  <symbol id="icon-pediatria" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M10 3h4"/>
-    <path d="M10 3v3l-2 2v11a2 2 0 002 2h4a2 2 0 002-2V8l-2-2V3"/>
-    <path d="M8 13h8"/>
-  </symbol>
-  <symbol id="icon-hipertension" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <circle cx="12" cy="14" r="7"/>
-    <path d="M12 14l3.5-4.5"/>
-    <path d="M12 7V5"/>
-    <path d="M12 3c-1.2 1-1.2 2 0 3c1.2-1 1.2-2 0-3z" fill="currentColor" stroke="none"/>
-  </symbol>
-  <symbol id="icon-diabetes" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-    <path d="M12 3c4 5 6 8.5 6 11.5a6 6 0 01-12 0C6 11.5 8 8 12 3z"/>
-    <path d="M9.5 14.5a2.5 2.5 0 002.5 2.5"/>
-  </symbol>
   <symbol id="icon-enfermedad-cronica" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
     <rect x="5" y="4" width="14" height="17" rx="2"/>
     <path d="M9 3h6a1 1 0 011 1v1H8V4a1 1 0 011-1z"/>
     <path d="M7 13h3l1.5-3 2 6 1.5-3H17"/>
+  </symbol>
+
+  <symbol id="icon-chevron-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M15 5l-7 7 7 7"/>
+  </symbol>
+  <symbol id="icon-chevron-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M9 5l7 7-7 7"/>
+  </symbol>
+
+  <symbol id="icon-valor-humanizacion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 20s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 10c0 5.6-7 10-7 10z"/>
+  </symbol>
+  <symbol id="icon-valor-profesionalismo" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <rect x="4" y="7" width="16" height="12" rx="2"/><path d="M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"/><path d="M4 12h16"/>
+  </symbol>
+  <symbol id="icon-valor-respeto" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M7 11V7a5 5 0 0110 0v4"/><rect x="4" y="11" width="16" height="10" rx="2"/>
+  </symbol>
+  <symbol id="icon-valor-oportunidad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>
+  </symbol>
+  <symbol id="icon-valor-confianza" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 2l7 4v6c0 5-3 8-7 10-4-2-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/>
+  </symbol>
+  <symbol id="icon-valor-prevencion" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 21c-4-2-7-5-7-9a5 5 0 019-3 5 5 0 019 3c0 4-3 7-7 9z"/><path d="M12 9v5"/><path d="M12 16.5v.01"/>
+  </symbol>
+  <symbol id="icon-valor-comunidad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <circle cx="8" cy="9" r="2.5"/><circle cx="16" cy="9" r="2.5"/>
+    <path d="M3 20c0-3 2-5 5-5s5 2 5 5"/><path d="M11 20c0-3 2-5 5-5s5 2 5 5"/>
+  </symbol>
+  <symbol id="icon-valor-calidad" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <path d="M12 2l2.6 5.3 5.8.8-4.2 4.1 1 5.8L12 15l-5.2 2.8 1-5.8-4.2-4.1 5.8-.8z"/>
   </symbol>
 
   <symbol id="icon-whatsapp-outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -322,16 +266,17 @@
 <header class="header" id="header">
   <div class="container header__inner">
     <a href="#inicio" class="logo">
-      <img src="assets/img/logo/logo-renacer.png" width="40" height="40" alt="" class="logo__img">
+      <img src="assets/img/logo/logo-renacer.png" width="64" height="64" alt="" class="logo__img">
       Consulta <span>Renacer</span>
     </a>
 
     <nav class="nav" id="nav">
       <ul class="nav__list">
         <li><a href="#servicios" class="nav__link">Servicios</a></li>
-        <li><a href="#domicilio" class="nav__link">Domicilio</a></li>
-        <li><a href="#equipo" class="nav__link">Equipo</a></li>
         <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        <li><a href="#mision" class="nav__link">Misión</a></li>
+        <li><a href="#vision" class="nav__link">Visión</a></li>
+        <li><a href="#convenios" class="nav__link">Convenios</a></li>
       </ul>
     </nav>
 
@@ -352,10 +297,9 @@
     <div class="container hero__inner">
       <div class="hero__content reveal">
         <img src="assets/img/logo/logo-renacer.png" width="72" height="72" alt="" class="hero__logo">
-        <p class="hero__eyebrow">Mi Bienestar — Consultorios de Chile</p>
         <h1 class="hero__title">Consulta Médica Renacer</h1>
         <p class="hero__slogan">Cuidamos de ti, estés donde estés</p>
-        <p class="hero__subtitle">Atención integral para ti y tu familia en San Ramón, con consulta presencial y a domicilio.</p>
+        <p class="hero__subtitle">Atención integral para ti y tu familia en toda la Región Metropolitana, con consulta a domicilio.</p>
         <div class="hero__actions">
           <a href="https://wa.me/56930882291?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20Consulta%20M%C3%A9dica%20Renacer" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Agendar hora</a>
           <a href="#servicios" class="btn btn--outline">Ver servicios</a>
@@ -367,7 +311,39 @@
         <svg class="hero__blob-bg" viewBox="0 0 600 600" aria-hidden="true">
           <path d="M300,40 C420,40 540,120 560,250 C580,380 500,500 380,545 C260,590 120,560 60,450 C0,340 30,200 120,110 C180,52 240,40 300,40 Z" fill="var(--color-secondary)" opacity="0.14"/>
         </svg>
-        <img src="assets/img/fotografias/hero-doctor.jpg" width="900" height="1100" alt="Profesional de la salud de Consulta Médica Renacer" loading="eager" fetchpriority="high" class="hero__photo">
+
+        <div class="carousel" id="hero-carousel" data-carousel role="region" aria-roledescription="carrusel" aria-label="Fotos de atención médica a domicilio de Consulta Médica Renacer">
+          <div class="carousel__track">
+            <div class="carousel__slide is-active" role="group" aria-roledescription="diapositiva" aria-label="1 de 4" aria-hidden="false">
+              <img src="assets/img/carrusel/hero-01.jpg" width="1600" height="1000" alt="Enfermera controlando la presión arterial a una paciente adulta mayor en su hogar" loading="eager" fetchpriority="high" class="carousel__img">
+            </div>
+            <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="2 de 4" aria-hidden="true">
+              <img src="assets/img/carrusel/hero-02.jpg" width="1600" height="1000" alt="Kinesiólogo realizando una sesión de rehabilitación a domicilio con un paciente adulto mayor" loading="lazy" class="carousel__img">
+            </div>
+            <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="3 de 4" aria-hidden="true">
+              <img src="assets/img/carrusel/hero-03.jpg" width="1600" height="1000" alt="Psicóloga en una sesión de atención a domicilio con una paciente" loading="lazy" class="carousel__img">
+            </div>
+            <div class="carousel__slide" role="group" aria-roledescription="diapositiva" aria-label="4 de 4" aria-hidden="true">
+              <img src="assets/img/carrusel/hero-04.jpg" width="1600" height="1000" alt="Profesional de la salud tomando una muestra de sangre a domicilio a un paciente adulto mayor" loading="lazy" class="carousel__img">
+            </div>
+          </div>
+
+          <button type="button" class="carousel__control carousel__control--prev" aria-label="Diapositiva anterior">
+            <svg aria-hidden="true"><use href="#icon-chevron-left"></use></svg>
+          </button>
+          <button type="button" class="carousel__control carousel__control--next" aria-label="Diapositiva siguiente">
+            <svg aria-hidden="true"><use href="#icon-chevron-right"></use></svg>
+          </button>
+
+          <div class="carousel__dots" role="tablist" aria-label="Seleccionar diapositiva">
+            <button type="button" class="carousel__dot is-active" aria-label="Ir a diapositiva 1" aria-current="true" data-index="0"></button>
+            <button type="button" class="carousel__dot" aria-label="Ir a diapositiva 2" data-index="1"></button>
+            <button type="button" class="carousel__dot" aria-label="Ir a diapositiva 3" data-index="2"></button>
+            <button type="button" class="carousel__dot" aria-label="Ir a diapositiva 4" data-index="3"></button>
+          </div>
+
+          <p class="carousel__live" aria-live="off"></p>
+        </div>
       </div>
     </div>
     <div class="hero__wave" aria-hidden="true">
@@ -384,213 +360,94 @@
         <span class="trust__icon" aria-hidden="true">
           <svg><use href="#icon-check-home"></use></svg>
         </span>
-        <!-- EDITAR: confirmar comunas exactas de cobertura domiciliaria -->
-        <p>Atención a domicilio en San Ramón y comunas cercanas</p>
+        <p>Atención solo a domicilio</p>
       </div>
       <div class="trust__item reveal">
         <span class="trust__icon" aria-hidden="true">
           <svg><use href="#icon-shield"></use></svg>
         </span>
-        <!-- EDITAR: confirmar datos de acreditación/registro de los profesionales -->
-        <p>Equipo de profesionales acreditados y con experiencia</p>
+        <p>Toda la Región Metropolitana</p>
       </div>
       <div class="trust__item reveal">
         <span class="trust__icon" aria-hidden="true">
           <svg><use href="#icon-family"></use></svg>
         </span>
-        <p>Atención pensada para toda la familia, sin importar la edad</p>
+        <p>Profesionales de la salud</p>
       </div>
       <div class="trust__item reveal">
         <span class="trust__icon" aria-hidden="true">
           <svg><use href="#icon-clock"></use></svg>
         </span>
-        <p>Respuesta y agendamiento por WhatsApp el mismo día</p>
+        <p>Agenda por WhatsApp</p>
       </div>
-    </div>
-  </section>
-
-  <!-- PRUEBA SOCIAL -->
-  <section class="proof-band" aria-label="Nuestro centro en funcionamiento">
-    <div class="container proof-band__inner reveal">
-      <img src="assets/img/fotografias/centro-sala-espera.jpg" width="1600" height="1000" loading="lazy" alt="Sala de espera de Consulta Médica Renacer" class="proof-band__img">
-      <p class="proof-band__text">Un centro médico real, en funcionamiento, listo para atenderte con calidez y profesionalismo.</p>
-    </div>
-  </section>
-
-  <!-- ATENCIÓN A DOMICILIO -->
-  <section class="section section--domicilio" id="domicilio">
-    <div class="container">
-      <h2 class="section__title reveal">Atención a domicilio</h2>
-      <p class="section__subtitle reveal">Recibe atención profesional sin salir de casa, con la misma calidez y calidad de siempre.</p>
-
-      <div class="cards-grid">
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-medico-domicilio"></use></svg></span>
-          <h4 class="card__title">Médico a domicilio</h4>
-          <p class="card__text">Atención médica en la comodidad de tu hogar.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-enfermeria-domicilio"></use></svg></span>
-          <h4 class="card__title">Enfermería a domicilio</h4>
-          <p class="card__text">Curaciones, inyecciones y cuidados de enfermería donde estés.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-examenes-domicilio"></use></svg></span>
-          <h4 class="card__title">Exámenes a domicilio</h4>
-          <p class="card__text">Toma de muestras sin salir de tu casa.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-adulto-mayor-domicilio"></use></svg></span>
-          <h4 class="card__title">Cuidado de adulto mayor a domicilio</h4>
-          <p class="card__text">Acompañamiento y cuidado especializado para personas mayores.</p>
-        </article>
-      </div>
-
-      <div class="section__cta reveal">
-        <a href="https://wa.me/56982328997?text=Hola%2C%20quiero%20solicitar%20atenci%C3%B3n%20a%20domicilio%20en%20Consulta%20M%C3%A9dica%20Renacer" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Solicitar atención a domicilio</a>
-      </div>
-    </div>
-    <div class="section__wave" aria-hidden="true">
-      <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
-        <path d="M0,64 C240,0 480,120 720,64 C960,0 1200,64 1440,32 L1440,120 L0,120 Z"></path>
-      </svg>
     </div>
   </section>
 
   <!-- SERVICIOS -->
   <section class="section" id="servicios">
     <div class="container">
-      <h2 class="section__title reveal">Nuestros servicios</h2>
-      <p class="section__subtitle reveal">Atención clínica presencial y exámenes realizados por profesionales de la salud.</p>
+      <h2 class="section__title reveal">Nuestros servicios a domicilio</h2>
+      <p class="section__subtitle reveal">Atención profesional en la comodidad de tu hogar, en toda la Región Metropolitana.</p>
 
-      <h3 class="section__group-title reveal">Atención clínica presencial</h3>
       <div class="cards-grid">
         <article class="card reveal">
           <span class="card__icon" aria-hidden="true"><svg><use href="#icon-medicina-general"></use></svg></span>
           <h4 class="card__title">Medicina General</h4>
-          <p class="card__text">Diagnóstico y tratamiento oportuno para toda la familia.</p>
+          <p class="card__text">Diagnóstico y tratamiento oportuno para toda la familia, en tu hogar.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-enfermeria"></use></svg></span>
+          <h4 class="card__title">Enfermería</h4>
+          <p class="card__text">Curaciones, inyecciones y cuidados de enfermería sin salir de casa.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-kinesiologia"></use></svg></span>
+          <h4 class="card__title">Kinesiología</h4>
+          <p class="card__text">Rehabilitación física y tratamiento de dolores musculares en tu hogar.</p>
         </article>
         <article class="card reveal">
           <span class="card__icon" aria-hidden="true"><svg><use href="#icon-psicologia"></use></svg></span>
           <h4 class="card__title">Psicología</h4>
-          <p class="card__text">Acompañamiento emocional profesional en un espacio de confianza.</p>
+          <p class="card__text">Acompañamiento emocional profesional, en un espacio de confianza.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-enfermedad-cronica"></use></svg></span>
+          <h4 class="card__title">Control de Enfermedades Crónicas</h4>
+          <p class="card__text">Seguimiento de patologías crónicas sin que tengas que salir de casa.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-podologia"></use></svg></span>
+          <h4 class="card__title">Podología</h4>
+          <p class="card__text">Cuidado profesional de pies para tu bienestar diario, a domicilio.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-terapia-ocupacional"></use></svg></span>
+          <h4 class="card__title">Terapia Ocupacional</h4>
+          <p class="card__text">Apoyo para recuperar autonomía en las actividades de tu día a día.</p>
+        </article>
+        <article class="card reveal">
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-fonoaudiologia"></use></svg></span>
+          <h4 class="card__title">Fonoaudiología</h4>
+          <p class="card__text">Evaluación y terapia del habla, voz y deglución en tu hogar.</p>
         </article>
         <article class="card reveal">
           <span class="card__icon" aria-hidden="true"><svg><use href="#icon-nutricion"></use></svg></span>
           <h4 class="card__title">Nutrición</h4>
           <p class="card__text">Planes alimentarios personalizados según tus objetivos de salud.</p>
         </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-matrona"></use></svg></span>
-          <h4 class="card__title">Matrona</h4>
-          <p class="card__text">Control ginecológico y acompañamiento en todas las etapas.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-fonoaudiologia"></use></svg></span>
-          <h4 class="card__title">Fonoaudiología</h4>
-          <p class="card__text">Evaluación y terapia del habla, voz y deglución.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-podologia"></use></svg></span>
-          <h4 class="card__title">Podología</h4>
-          <p class="card__text">Cuidado profesional de pies para tu bienestar diario.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-control-sano"></use></svg></span>
-          <h4 class="card__title">Control Sano</h4>
-          <p class="card__text">Seguimiento preventivo del desarrollo y crecimiento infantil.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-kinesiologia"></use></svg></span>
-          <h4 class="card__title">Kinesiología</h4>
-          <p class="card__text">Rehabilitación física y tratamiento de dolores musculares.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-control-peso"></use></svg></span>
-          <h4 class="card__title">Control de peso</h4>
-          <p class="card__text">Seguimiento profesional para alcanzar tu peso saludable.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-curaciones"></use></svg></span>
-          <h4 class="card__title">Curaciones</h4>
-          <p class="card__text">Manejo de heridas con técnicas seguras y actualizadas.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-pediatria"></use></svg></span>
-          <h4 class="card__title">Atención pediátrica</h4>
-          <p class="card__text">Cuidado médico especializado para los más pequeños de la casa.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-hipertension"></use></svg></span>
-          <h4 class="card__title">Control de hipertensión</h4>
-          <p class="card__text">Seguimiento periódico para mantener tu presión bajo control.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-diabetes"></use></svg></span>
-          <h4 class="card__title">Control de diabetes</h4>
-          <p class="card__text">Acompañamiento continuo para el manejo de tu diabetes.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-enfermedad-cronica"></use></svg></span>
-          <h4 class="card__title">Enfermedades crónicas</h4>
-          <p class="card__text">Control y seguimiento de patologías crónicas a largo plazo.</p>
-        </article>
       </div>
 
       <h3 class="section__group-title reveal">Exámenes y procedimientos</h3>
-      <div class="cards-grid">
+      <div class="cards-grid cards-grid--three">
         <article class="card reveal">
           <span class="card__icon" aria-hidden="true"><svg><use href="#icon-laboratorio"></use></svg></span>
-          <h4 class="card__title">Exámenes de laboratorio</h4>
-          <p class="card__text">Toma de muestras con resultados confiables y oportunos.</p>
+          <h4 class="card__title">Exámenes de Laboratorio</h4>
+          <p class="card__text">Toma de muestras en tu domicilio.</p>
         </article>
         <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-electrocardiograma"></use></svg></span>
-          <h4 class="card__title">Electrocardiogramas</h4>
-          <p class="card__text">Evaluación cardíaca rápida realizada por profesionales calificados.</p>
-        </article>
-        <article class="card reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-holter"></use></svg></span>
-          <h4 class="card__title">Holter de presión</h4>
-          <p class="card__text">Monitoreo continuo de tu presión arterial durante 24 horas.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- NUESTRO EQUIPO -->
-  <section class="section section--equipo" id="equipo">
-    <div class="container">
-      <h2 class="section__title reveal">Nuestro equipo</h2>
-      <p class="section__subtitle reveal">
-        Cuidamos de ti, estés donde estés: un equipo humano, cercano y profesional, comprometido con la
-        confianza, la calidez y la calidad de cada atención.
-      </p>
-
-      <div class="team-grid">
-        <article class="team-card reveal">
-          <img src="assets/img/fotografias/equipo-01.jpg" width="600" height="600" loading="lazy" alt="Dr. Deivis Marroquín, Médico Cirujano" class="team-card__photo">
-          <h3 class="team-card__name">Dr. Deivis Marroquín</h3>
-          <p class="team-card__role">Médico Cirujano</p>
-          <!-- EDITAR: confirmar horario de atención del Dr. Deivis Marroquín -->
-          <p class="team-card__schedule">Horario de atención: por confirmar</p>
-          <a href="https://wa.me/56930882291?text=Hola%2C%20quiero%20agendar%20hora%20con%20el%20Dr.%20Deivis%20Marroqu%C3%ADn" class="btn btn--outline team-card__btn" target="_blank" rel="noopener noreferrer">Agendar con Dr. Deivis</a>
-        </article>
-        <article class="team-card reveal">
-          <img src="assets/img/fotografias/equipo-02.jpg" width="600" height="600" loading="lazy" alt="Francisca Meneses, Psicóloga infanto-juvenil" class="team-card__photo">
-          <h3 class="team-card__name">Francisca Meneses</h3>
-          <p class="team-card__role">Psicóloga infanto-juvenil</p>
-          <p class="team-card__schedule">Sábados de 09:00 a 14:00 hrs</p>
-          <!-- EDITAR: confirmar si +56 9 5809 6320 es número de agenda pública de Francisca -->
-          <a href="https://wa.me/56958096320?text=Hola%2C%20quiero%20agendar%20hora%20con%20Francisca%20Meneses" class="btn btn--outline team-card__btn" target="_blank" rel="noopener noreferrer">Agendar con Francisca</a>
-        </article>
-        <article class="team-card reveal">
-          <img src="assets/img/fotografias/equipo-03.jpg" width="600" height="600" loading="lazy" alt="Marta Canales, Nutricionista" class="team-card__photo">
-          <h3 class="team-card__name">Marta Canales</h3>
-          <p class="team-card__role">Nutricionista</p>
-          <p class="team-card__schedule">Jueves y viernes de 10:00 a 17:00 hrs, sábados de 10:00 a 14:00 hrs</p>
-          <!-- EDITAR: confirmar si +56 9 5809 6320 es número de agenda pública de Marta -->
-          <a href="https://wa.me/56958096320?text=Hola%2C%20quiero%20agendar%20hora%20con%20Marta%20Canales" class="btn btn--outline team-card__btn" target="_blank" rel="noopener noreferrer">Agendar con Marta</a>
+          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-evaluacion-kinesica"></use></svg></span>
+          <h4 class="card__title">Evaluación Kinésica</h4>
+          <p class="card__text">Evaluación y programa personalizado.</p>
         </article>
       </div>
     </div>
@@ -614,8 +471,108 @@
         <div class="step reveal">
           <span class="step__number">3</span>
           <h3 class="step__title">Confirma tu hora</h3>
-          <p class="step__text">Recibes la confirmación con fecha, hora y modalidad de atención.</p>
+          <p class="step__text">Recibes la confirmación con fecha, hora y dirección de la visita.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIÉNES SOMOS -->
+  <section class="section" id="quienes-somos">
+    <div class="container">
+      <h2 class="section__title reveal">Quiénes somos</h2>
+      <p class="about__text reveal">Consulta Médica Renacer es un centro de atención en salud orientado a entregar una atención profesional, cercana, oportuna y de calidad, poniendo siempre a las personas y sus necesidades en el centro de nuestro trabajo.</p>
+      <p class="about__text reveal">Nuestro propósito es facilitar el acceso a la atención de salud, llevando nuestros servicios directamente al domicilio de nuestros pacientes, adaptándonos a las necesidades de ellos, sus familias y organizaciones.</p>
+      <p class="about__text reveal">Contamos con un equipo de profesionales y técnicos comprometidos con brindar una atención responsable, humana y personalizada, procurando que cada paciente reciba una orientación adecuada y un servicio basado en el respeto, la empatía y la confianza.</p>
+      <p class="about__text reveal">En Consulta Médica Renacer creemos que cuidar la salud no significa solamente atender una enfermedad, sino también prevenir, orientar, acompañar y promover una mejor calidad de vida.</p>
+      <p class="about__quote reveal">"Renacer es cuidar, acompañar y estar cuando más nos necesitas."</p>
+    </div>
+  </section>
+
+  <!-- MISIÓN Y VISIÓN -->
+  <section class="section" id="mv">
+    <div class="container">
+      <div class="mv-grid">
+        <div class="mv-card reveal" id="mision">
+          <h2 class="mv-card__title">Nuestra Misión</h2>
+          <p class="mv-card__text">Brindar servicios de salud integrales, oportunos, accesibles y de calidad, entregando una atención centrada en las personas, con un equipo comprometido con el bienestar de nuestros pacientes y sus familias.</p>
+          <p class="mv-card__text">Buscamos facilitar el acceso a la atención de salud mediante servicios domiciliarios, entregando una atención basada en la empatía, respeto, seguridad, profesionalismo y compromiso, contribuyendo a la prevención, recuperación y mejor calidad de vida de nuestra comunidad.</p>
+        </div>
+        <div class="mv-card reveal" id="vision">
+          <h2 class="mv-card__title">Nuestra Visión</h2>
+          <p class="mv-card__text">Ser una institución de salud reconocida y valorada por la comunidad, destacándonos por la calidad de nuestros servicios, la atención humana y personalizada y nuestro compromiso permanente con nuestros pacientes.</p>
+          <p class="mv-card__text">Aspiramos a crecer de manera responsable, incorporando nuevos servicios y soluciones de atención que permitan acercar la salud a las personas, sus hogares, lugares de trabajo y organizaciones.</p>
+          <p class="mv-card__text">Queremos que Consulta Médica Renacer sea sinónimo de confianza, cercanía, calidad y compromiso con la salud.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="section section--bg-soft" id="valores">
+    <div class="container">
+      <h2 class="section__title reveal">Nuestros Valores</h2>
+      <div class="values-grid">
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-humanizacion"></use></svg></span>
+          <h4 class="value-card__title">Humanización</h4>
+          <p class="value-card__text">Tratamos a cada persona con respeto, empatía y sensibilidad, comprendiendo que detrás de cada paciente existe una historia y una necesidad particular.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-profesionalismo"></use></svg></span>
+          <h4 class="value-card__title">Profesionalismo</h4>
+          <p class="value-card__text">Trabajamos con responsabilidad, compromiso y vocación de servicio, procurando entregar una atención segura y de calidad.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-respeto"></use></svg></span>
+          <h4 class="value-card__title">Respeto</h4>
+          <p class="value-card__text">Valoramos la dignidad, privacidad y derechos de cada paciente, independiente de su edad, condición o situación.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-oportunidad"></use></svg></span>
+          <h4 class="value-card__title">Oportunidad</h4>
+          <p class="value-card__text">Buscamos facilitar el acceso a la atención de salud en el momento en que nuestros pacientes la necesitan.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-confianza"></use></svg></span>
+          <h4 class="value-card__title">Confianza</h4>
+          <p class="value-card__text">Construimos relaciones basadas en la responsabilidad, transparencia y confidencialidad.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-prevencion"></use></svg></span>
+          <h4 class="value-card__title">Prevención</h4>
+          <p class="value-card__text">Promovemos el cuidado de la salud y la prevención como herramientas fundamentales para mejorar la calidad de vida.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-comunidad"></use></svg></span>
+          <h4 class="value-card__title">Compromiso con la comunidad</h4>
+          <p class="value-card__text">Trabajamos para acercar los servicios de salud a las personas, familias, empresas e instituciones.</p>
+        </article>
+        <article class="value-card reveal">
+          <span class="value-card__icon" aria-hidden="true"><svg><use href="#icon-valor-calidad"></use></svg></span>
+          <h4 class="value-card__title">Calidad</h4>
+          <p class="value-card__text">Buscamos mejorar continuamente nuestros procesos y servicios para entregar una experiencia de atención cada vez mejor.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONVENIOS -->
+  <section class="section" id="convenios">
+    <div class="container">
+      <h2 class="section__title reveal">Convenios</h2>
+      <p class="section__subtitle reveal">Trabajamos con instituciones para acercar la salud a sus funcionarios y familias.</p>
+
+      <div class="convenios-grid">
+        <article class="convenio-card reveal">
+          <img src="assets/img/convenios/mi-bienestar-gendarmeria.png" width="320" height="111" loading="lazy" alt="Mi Bienestar — Gendarmería de Chile" class="convenio-card__logo">
+          <p class="convenio-card__name">Mi Bienestar — Gendarmería de Chile</p>
+        </article>
+      </div>
+
+      <div class="convenios__cta reveal">
+        <p class="convenios__cta-text">¿Tu institución quiere un convenio? Escríbenos</p>
+        <a href="https://wa.me/56930882291?text=Hola%2C%20quisiera%20informaci%C3%B3n%20sobre%20convenios%20institucionales" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Escribir por WhatsApp</a>
       </div>
     </div>
   </section>
@@ -624,97 +581,39 @@
   <section class="section section--faq" id="faq">
     <div class="container">
       <h2 class="section__title reveal">Preguntas frecuentes</h2>
-      <p class="section__subtitle reveal">Resolvemos las dudas más comunes sobre nuestra atención.</p>
+      <p class="section__subtitle reveal">Resolvemos las dudas más comunes sobre nuestra atención a domicilio.</p>
 
       <div class="faq-list">
         <details class="faq__item reveal">
-          <summary class="faq__question">¿Atienden por Fonasa o Isapre?</summary>
-          <!-- EDITAR: confirmar convenios vigentes con Fonasa/Isapres -->
-          <p class="faq__answer">Estamos verificando y actualizando el detalle de convenios vigentes con Fonasa e Isapres. Escríbenos por WhatsApp y te confirmamos tu caso puntual.</p>
+          <summary class="faq__question">¿Cómo funciona la atención a domicilio?</summary>
+          <!-- EDITAR: confirmar detalle exacto del protocolo de atención -->
+          <p class="faq__answer">Agendas por WhatsApp, coordinamos la hora y un profesional te visita en tu domicilio con lo necesario para tu atención.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">¿Cuál es el valor de la consulta?</summary>
-          <!-- EDITAR: confirmar valores actualizados de consulta según especialidad -->
-          <p class="faq__answer">El valor varía según la especialidad y el tipo de atención (presencial o a domicilio). Contáctanos por WhatsApp y te entregamos el valor exacto antes de agendar.</p>
+          <summary class="faq__question">¿A qué comunas de la Región Metropolitana llegan?</summary>
+          <!-- EDITAR: confirmar si existen comunas con restricción de cobertura -->
+          <p class="faq__answer">Atendemos en toda la Región Metropolitana. Cuéntanos tu dirección por WhatsApp y te confirmamos el tiempo estimado de llegada.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">¿En qué comunas realizan atención a domicilio?</summary>
-          <!-- EDITAR: confirmar listado completo de comunas con cobertura domiciliaria -->
-          <p class="faq__answer">Cubrimos San Ramón y comunas cercanas. Cuéntanos tu dirección por WhatsApp y te confirmamos si contamos con cobertura en tu zona.</p>
+          <summary class="faq__question">¿Con cuánta anticipación debo agendar?</summary>
+          <!-- EDITAR: confirmar plazos reales de agendamiento -->
+          <p class="faq__answer">El tiempo de coordinación depende de la disponibilidad y tu urgencia. Escríbenos por WhatsApp y te confirmamos el horario más próximo disponible.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">¿Necesito orden médica para hacerme un examen?</summary>
-          <!-- EDITAR: confirmar requisitos exactos según tipo de examen -->
-          <p class="faq__answer">Depende del tipo de examen. Para algunos basta con agendar directamente, y para otros se requiere una orden médica previa. Consúltanos por WhatsApp con el examen que necesitas.</p>
+          <summary class="faq__question">¿Atienden con Fonasa, Isapre o convenios?</summary>
+          <!-- EDITAR: confirmar convenios vigentes con Fonasa, Isapres y convenios institucionales -->
+          <p class="faq__answer">Estamos actualizando el detalle de convenios vigentes con Fonasa, Isapres e instituciones. Escríbenos por WhatsApp y te confirmamos tu caso puntual.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">¿Tienen atención pediátrica?</summary>
-          <p class="faq__answer">Sí, contamos con atención pediátrica y control sano para el seguimiento del desarrollo y crecimiento de niñas y niños.</p>
+          <summary class="faq__question">¿Qué debo tener preparado en casa para la visita?</summary>
+          <!-- EDITAR: confirmar requisitos exactos según tipo de atención -->
+          <p class="faq__answer">Dependiendo del tipo de atención, te indicaremos por WhatsApp si necesitas preparar algo especial antes de la visita.</p>
         </details>
         <details class="faq__item reveal">
-          <summary class="faq__question">¿Cuánto demoran los resultados de laboratorio?</summary>
-          <!-- EDITAR: confirmar plazos reales de entrega de resultados de laboratorio -->
-          <p class="faq__answer">Los plazos dependen del tipo de examen solicitado. Al momento de tomar la muestra te indicamos el tiempo estimado de entrega de tus resultados.</p>
+          <summary class="faq__question">¿Cómo recibo los resultados de mis exámenes de laboratorio?</summary>
+          <!-- EDITAR: confirmar canal y plazos de entrega de resultados -->
+          <p class="faq__answer">Al momento de tomar la muestra en tu domicilio te indicamos el canal y el tiempo estimado de entrega de tus resultados.</p>
         </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- CUIDADOS ESPECIALIZADOS -->
-  <section class="section section--cuidados" id="cuidados">
-    <div class="container">
-      <h2 class="section__title reveal">Cuidados especializados</h2>
-      <p class="section__subtitle reveal">
-        Como parte de Mi Bienestar — Consultorios de Chile, acompañamos a las familias también en los momentos más
-        sensibles, con respeto, calma y disposición humana.
-      </p>
-
-      <div class="cards-grid cards-grid--three">
-        <article class="card card--sobrio reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-cuidados-paliativos"></use></svg></span>
-          <h4 class="card__title">Manejo de dolor y cuidados paliativos</h4>
-          <p class="card__text">Acompañamiento integral para aliviar el dolor y sufrimiento.</p>
-        </article>
-        <article class="card card--sobrio reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-fin-de-vida"></use></svg></span>
-          <h4 class="card__title">Cuidados de fin de vida</h4>
-          <p class="card__text">Apoyo humano y profesional en momentos difíciles.</p>
-        </article>
-        <article class="card card--sobrio reveal">
-          <span class="card__icon" aria-hidden="true"><svg><use href="#icon-certificado"></use></svg></span>
-          <h4 class="card__title">Certificado de defunción</h4>
-          <p class="card__text">Trámite realizado con respeto y diligencia profesional.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- UBICACIÓN -->
-  <section class="section section--ubicacion" id="ubicacion">
-    <div class="container ubicacion__grid">
-      <div class="ubicacion__info reveal">
-        <h2 class="section__title">Dónde encontrarnos</h2>
-        <p class="ubicacion__item">
-          <strong>Dirección:</strong> Pedro Aguirre Cerda 9299, San Ramón, Región Metropolitana, Chile
-        </p>
-        <p class="ubicacion__item">
-          <!-- EDITAR: confirmar horario de atención del Dr. Deivis Marroquín -->
-          <strong>Dr. Deivis Marroquín (Medicina General):</strong> horario por confirmar
-        </p>
-        <p class="ubicacion__item">
-          <strong>Francisca Meneses (Psicología infanto-juvenil):</strong> sábados de 09:00 a 14:00 hrs
-        </p>
-        <p class="ubicacion__item">
-          <strong>Marta Canales (Nutrición):</strong> jueves y viernes de 10:00 a 17:00 hrs, sábados de 10:00 a 14:00 hrs
-        </p>
-      </div>
-      <div class="ubicacion__map reveal">
-        <iframe
-          src="https://www.google.com/maps?q=Pedro+Aguirre+Cerda+9299,+San+Ram%C3%B3n,+Regi%C3%B3n+Metropolitana,+Chile&output=embed"
-          width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Ubicación de Consulta Médica Renacer en el mapa">
-        </iframe>
       </div>
     </div>
   </section>
@@ -725,22 +624,13 @@
       <h2 class="section__title reveal">Contáctanos</h2>
       <p class="section__subtitle reveal">Escríbenos por WhatsApp y te responderemos a la brevedad.</p>
       <div class="contact-cards">
-        <a class="contact-card reveal" href="https://wa.me/56930882291?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20Consulta%20M%C3%A9dica%20Renacer" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al primer número de contacto">
+        <a class="contact-card reveal" href="https://wa.me/56930882291?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20Consulta%20M%C3%A9dica%20Renacer" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp">
           <span class="contact-card__icon" aria-hidden="true">
             <svg><use href="#icon-whatsapp-outline"></use></svg>
           </span>
           <span>
             <strong>WhatsApp</strong>
             <span class="contact-card__value">+56 9 3088 2291</span>
-          </span>
-        </a>
-        <a class="contact-card reveal" href="https://wa.me/56982328997?text=Hola%2C%20quiero%20agendar%20una%20hora%20en%20Consulta%20M%C3%A9dica%20Renacer" target="_blank" rel="noopener noreferrer" aria-label="Escribir por WhatsApp al segundo número de contacto">
-          <span class="contact-card__icon" aria-hidden="true">
-            <svg><use href="#icon-whatsapp-outline"></use></svg>
-          </span>
-          <span>
-            <strong>WhatsApp</strong>
-            <span class="contact-card__value">+56 9 8232 8997</span>
           </span>
         </a>
       </div>
@@ -754,11 +644,19 @@
     <div class="footer__col">
       <img src="assets/img/logo/logo-renacer-blanco.png" width="48" height="48" alt="" class="footer__logo">
       <p class="footer__brand">Consulta Médica Renacer</p>
-      <p>Pedro Aguirre Cerda 9299, San Ramón, Región Metropolitana, Chile</p>
-      <p>WhatsApp: <a href="https://wa.me/56930882291">+56 9 3088 2291</a> · <a href="https://wa.me/56982328997">+56 9 8232 8997</a></p>
+      <p>Atención a domicilio en toda la Región Metropolitana</p>
+      <p>WhatsApp: <a href="https://wa.me/56930882291">+56 9 3088 2291</a></p>
+      <nav aria-label="Enlaces del pie de página">
+        <ul class="footer__links">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="#mision">Misión</a></li>
+          <li><a href="#vision">Visión</a></li>
+          <li><a href="#convenios">Convenios</a></li>
+        </ul>
+      </nav>
     </div>
     <div class="footer__col">
-      <p>Respaldado por Mi Bienestar — Consultorios de Chile.</p>
       <p class="footer__disclaimer">
         Este sitio es informativo y no reemplaza una consulta médica. Ante una urgencia, llama al 131.
       </p>
@@ -780,6 +678,7 @@
 <script defer src="js/modules/smooth-scroll.js"></script>
 <script defer src="js/modules/reveal.js"></script>
 <script defer src="js/modules/footer-year.js"></script>
+<script defer src="js/modules/carousel.js"></script>
 <script defer src="js/main.js"></script>
 </body>
 </html>
